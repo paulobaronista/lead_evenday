@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+ display: block;
+}
+body {
+ line-height: 1;
+}
+ol, ul {
+ list-style: none;
+}
+blockquote, q {
+ quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content: '';
+ content: none;
+}
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+body { font-family: "Arial", Helvetica, sans-serif; font-size: 10px;}
+
+#page-full {
+ width: 100%;
+ float: left;
+ position: relative;
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ee458a+0,fa0779+100 */
+ background: rgb(238,69,138); /* Old browsers */
+ background: -moz-linear-gradient(top,  rgba(238,69,138,1) 0%, rgba(250,7,121,1) 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(top,  rgba(238,69,138,1) 0%,rgba(250,7,121,1) 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to bottom,  rgba(238,69,138,1) 0%,rgba(250,7,121,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee458a', endColorstr='#fa0779',GradientType=0 ); /* IE6-9 */
+}
+header {
+ width: 100%;
+ padding: 15px 0 10px 0;
+ background-color: #f1ff09;
+ text-align: center;
+ position: absolute;
+ z-index: 100;
+ float: left;
+}
+header.animateIt {
+ position:fixed;
+ top:-65px;
+ left: 0;
+ right: 0;
+ z-index: 9999;
+ transition:0.4s top cubic-bezier(.3, .73, .3, .74);
+}
+body.down header.animateIt {
+ top:0;
+}
+#container-form {
+ width: 1024px;
+ height: 1331px;
+ position: relative;
+ float: left;
+ left: 50%;
+ margin-left: -512px;
+ padding-top: 65px;
+ background: url("../imagens/base.png") no-repeat 0 65px;
+}
+#box_form {
+ width: 405px;
+ height: 485px;
+ margin-top: 50px;
+ margin-right: 80px;
+ background-color: #8c366f;
+ float: right;
+ -webkit-border-radius: 30px;
+ -moz-border-radius: 30px;
+ border-radius: 30px;
+}
+#box_form span {
+ background-color: #f1ff09;
+ position: relative;
+ display: block;
+ text-align: center;
+ padding-top: 10px;
+ padding-bottom: 5px;
+ -webkit-border-top-left-radius: 30px;
+ -moz-border-top-left-radius: 30px;
+ border-top-left-radius: 30px;
+ -webkit-border-top-right-radius: 30px;
+ -moz-border-top-right-radius: 30px;
+ border-top-right-radius: 30px;
+}
+form input {
+ width: 370px;
+ height: 33px;
+ border: none;
+ padding: 0 5px 0 5px;
+ margin: 0 0 10px 12px;
+ font-family: "Arial", Helvetica, sans-serif;
+ color: #000;
+ font-size: 16px;
+}
+form select {
+ width: 300px;
+ height: 30px;
+ border: none;
+ padding: 0 5px 0 5px;
+ font-family: "Arial", Helvetica, sans-serif;
+ margin: 0 0 10px 12px;
+ color: #000;
+ font-size: 16px;
+}
+form textarea {
+ width: 370px;
+ height: 80px;
+ border: none;
+ padding: 5px;
+ font-family: "Arial", Helvetica, sans-serif;
+ margin: 0 0 10px 12px;
+ color: #000;
+ font-family: "Arial", Helvetica, sans-serif;
+ font-size: 16px;
+}
+form label {
+ font-size: 18px;
+ font-family: "Arial", Helvetica, sans-serif;
+ text-transform: uppercase;
+ padding: 5px 0 2px 0;
+ float: left;
+ margin-left: 12px;
+ color: #fff;
+}
+.statusNome {
+ margin-top: 5px;
+}
+small {
+ float: left;
+ padding: 0 0 0 15px;
+ margin: -5px 0 0 0;
+ width: 80%;
+ color: #fff; 
+}
+.enviar {
+ width: 90%;
+ cursor: pointer;
+ outline: none;
+ background-color: #f1ff09;
+ font-family: "Arial", Helvetica, sans-serif;
+ padding: 9px 0 9px 0;
+ margin: 10px 5% 0 5%;
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 20px;
+ text-decoration: none;
+ color: #17756b;
+ float: left;
+}
+.enviar:hover {
+ background-color: #e3f004;
+}
+footer {
+ width: 100%;
+ position: relative;
+ float: left;	
+ background-color: #FFF;
+}
+footer div {
+ width: 1024px;
+ margin: 0 auto;
+ text-align: justify;
+ padding: 25px 0 25px 0;
+ color: #000;
+ font-size: 10px;
+}
+.txt-obrigado {
+ text-align: center;
+ font-size: 25px;
+ color: #FFF;
+ line-height: 30px;
+ padding-left: 1%;
+ padding-right: 1%;
+ text-transform: uppercase;
+ padding-top: 150px !important;
+}
+
+::-webkit-input-placeholder { color: inherit;} /*Atributo para o Chrome colocar cor dentro do input*/
+
+/* Hack ie10 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+
+   
+}
